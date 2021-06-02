@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>媒体自查</title>
+	<style type="text/css">
+		body{
+			margin: 20px 0;
+		}
+		#container{
+			width: 800px;
+			margin: auto;
+		}
+		p{
+			line-height: 60px;
+			text-align: center;
+            color: white;
+		}
+		#sub01{
+			width: 200px;
+			float: left;
+			background: #ff0000; /* 红色 */
+		}
+		#sub02{
+			width: 200px;
+			float: left;
+			background: #0004ff; /* 蓝色 */
+		}
+		#sub03{
+			width: 200px;
+			float: left;
+			background: #000000; /* 黑色 */
+		}
+        #sub04{
+			width: 200px;
+			float: right;
+			background: #ff7300; /* 橘色 */
+		}
+		
+		/* 窗口宽度在1200px以上 */
+		@media screen and (min-width: 1200px) {
+			#container{
+				width: 800px;
+			}
+			#sub01{
+				width: 200px;
+				float: left;
+			}
+			#sub02{
+				width: 200px;
+				float: left;
+			}
+			#sub03{
+				width: 200px;
+				float: left;
+			}
+            #sub04{
+				width: 200px;
+				float: right;
+			}
+		}
+		/* 窗口宽度在992px以上、1199px以下 */
+		@media screen and (min-width: 992px) and (max-width: 1199px) {
+			#container{
+				width:720px;
+			}
+			#sub01{
+				width: 720px;
+				float: none;
+				clear: both;
+			}
+			#sub02{
+				width: 240px;
+				float: left;
+			}
+			#sub03{
+				width: 240px;
+				float: left;
+			}
+            #sub04{
+                width: 240px;
+                float: right;
+            }
+		}
+		/* 窗口宽度在768px以上、991px以下 */
+		@media screen and (min-width: 768px) and (max-width: 991px) {
+			#container{
+				width: 600px;
+			}
+			#sub01{
+				width: 300px;
+				float: left;
+			}
+			#sub02{
+				width: 300px;
+				float: right;
+			}
+			#sub03{
+				width: 300px;
+				float: left;
+			}
+            #sub04{
+                width: 300px;
+                float: right;
+            }
+		}
+        /* 窗口宽度在767px以下 */
+        @media screen and (max-width: 767px) {
+			#container{
+				width: 400px;
+			}
+			#sub01{
+				width: 400px;
+				float: none;
+			}
+			#sub02{
+				width: 400px;
+				float: none;
+			}
+			#sub03{
+				width: 400px;
+				float: none;
+			}
+            #sub04{
+                width: 400px;
+                float: none;
+            }
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="sub01">
+			<p>1</p>
+		</div>
+		<div id="sub02">
+			<p>2</p>
+        </div>
+        <div id="sub03">
+			<p>3<p>
+        </div>
+        <div id="sub04">
+			<p>4</p>
+        </div>
+	</div>
+</body>
+</html>
